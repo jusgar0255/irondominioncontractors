@@ -1,0 +1,280 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Dominion Contractors, LLC</title>
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#1e293b;
+    --accent:#c79a3b;
+    --light:#f8fafc;
+    --gray:#64748b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+    background:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(rgba(15,23,42,.85), rgba(15,23,42,.85)),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+header h2{
+    font-size:1.3rem;
+    font-weight:400;
+    color:#e2e8f0;
+    margin-bottom:20px;
+}
+
+header p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--accent);
+    color:white;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ad8130;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    color:var(--primary);
+    margin-bottom:40px;
+}
+
+.about{
+    background:#fff;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.05rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    margin-bottom:10px;
+    padding-left:20px;
+    position:relative;
+}
+
+.card li:before{
+    content:"✓";
+    color:var(--accent);
+    position:absolute;
+    left:0;
+}
+
+.capabilities{
+    background:#f8fafc;
+}
+
+.markets{
+    background:white;
+}
+
+.contact{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact-info{
+    font-size:1.1rem;
+    margin-top:20px;
+}
+
+footer{
+    background:#0b1220;
+    color:#cbd5e1;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    header h2{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>IRON DOMINION CONTRACTORS, LLC</h1>
+        <h2>Federal Construction | Healthcare Infrastructure | Design-Build Services</h2>
+
+        <p>
+            Building mission-critical facilities with precision, safety,
+            and accountability.
+        </p>
+
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</header>
+
+<section class="about">
+    <div class="container">
+        <h2 class="section-title">Who We Are</h2>
+
+        <p>
+            Iron Dominion Contractors specializes in federal construction
+            and healthcare infrastructure projects, delivering high-quality
+            solutions with a commitment to safety, precision, and operational
+            excellence.
+            <br><br>
+            We support government agencies, military installations, VA medical
+            centers, and healthcare facilities where reliability, compliance,
+            and performance are essential to mission success.
+        </p>
+    </div>
+</section>
+
+<section class="capabilities">
+    <div class="container">
+        <h2 class="section-title">Core Capabilities</h2>
+
+        <div class="card">
+            <ul>
+                <li>Federal Construction</li>
+                <li>Healthcare Facility Renovations</li>
+                <li>VA Medical Center Projects</li>
+                <li>Design-Build Delivery</li>
+                <li>Facility Modernization</li>
+                <li>Interior Renovations</li>
+                <li>Infrastructure Upgrades</li>
+                <li>Site Logistics & Coordination</li>
+                <li>Quality Control Management</li>
+                <li>Safety Program Implementation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Why Iron Dominion</h2>
+
+        <div class="grid">
+            <div class="card">Federal project experience</div>
+            <div class="card">Healthcare construction expertise</div>
+            <div class="card">Mission-critical facility focus</div>
+            <div class="card">Safety-first culture</div>
+            <div class="card">Schedule-driven execution</div>
+            <div class="card">Client-focused communication</div>
+            <div class="card">Design-build capabilities</div>
+        </div>
+    </div>
+</section>
+
+<section class="markets">
+    <div class="container">
+        <h2 class="section-title">Markets Served</h2>
+
+        <div class="grid">
+            <div class="card">Federal Agencies</div>
+            <div class="card">Department of Veterans Affairs</div>
+            <div class="card">Department of Defense</div>
+            <div class="card">Military Installations</div>
+            <div class="card">Healthcare Systems</div>
+            <div class="card">Public Institutions</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-info">
+            <p><strong>Iron Dominion Contractors, LLC</strong></p>
+            <p>Phone: (971) 279-9078</p>
+            <p>Email: info@irondominioncontractors.com</p>
+            <p>Location: Portland, Oregon</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Iron Dominion Contractors, LLC. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```
